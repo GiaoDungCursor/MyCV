@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tôn Thất Nam Giao — CV</title>
-  <meta name="description" content="CV - Tôn Thất Nam Giao - Junior Developer (Flutter, React, IoT)" />
+  <meta name="description" content="CV - Tôn Thất Nam Giao - IT Developer" />
   <style>
     :root {
       --bg: #0b1220;
@@ -87,6 +87,22 @@
       flex-wrap: wrap;
     }
 
+    .hero__identity {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, .35);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
+    }
+
     .name {
       font-weight: 800;
       font-size: clamp(26px, 4vw, 36px);
@@ -135,6 +151,10 @@
     @media (max-width: 900px) {
       .grid {
         grid-template-columns: 1fr;
+      }
+
+      .hero__top {
+        align-items: center;
       }
     }
 
@@ -366,18 +386,21 @@
     <!-- ===== HERO ===== -->
     <header class="hero">
       <div class="hero__top">
-        <div>
-          <div class="name">Tôn Thất Nam Giao</div>
-          <div class="role">Junior Software Developer — Flutter • React • IoT</div>
+        <div class="hero__identity">
+          <img class="avatar" src="image.png" alt="Tôn Thất Nam Giao profile photo" />
+          <div>
+            <div class="name">Tôn Thất Nam Giao</div>
+            <div class="role">IT Developer</div>
+          </div>
         </div>
       </div>
       <div class="contact">
-        <div class="pill">Huế, Việt Nam</div>
+        <div class="pill">45 Thuận Thiên, Hương Văn, Hương Trà, Thành Phố Huế, Vietnam</div>
         <div class="pill"><a href="mailto:ttngiao123@gmail.com">ttngiao123@gmail.com</a></div>
         <div class="pill"><a href="tel:+84788599532">+84 788 599 532</a></div>
-        <div class="pill"><a href="https://github.com/giaodungcursor" target="_blank"
-            rel="noopener">github.com/giaodungcursor</a></div>
-        <!-- Nếu muốn dùng nick khác: đổi link trên thành GiaoDungCusor -->
+        <div class="pill"><a href="https://github.com/GiaoDungCursor" target="_blank"
+            rel="noopener">github.com/GiaoDungCursor</a></div>
+        <div class="pill">Date of Birth: 04/07/2004</div>
       </div>
     </header>
 
@@ -388,13 +411,13 @@
         <!-- Summary -->
         <section class="card summary">
           <div class="section-title">
-            <h2>Summary</h2>
+            <h2>Introduce</h2>
           </div>
           <div class="rule"></div>
-          <p>Final-year Computer Science student at Hue University of Science with hands-on experience in building
-            mobile and web applications. Comfortable with Flutter and React, Firebase on the cloud side, and IoT data
-            pipelines. Strong problem-solving mindset and teamwork; eager to contribute to production-grade features and
-            keep leveling up.</p>
+          <p>Final-year student at Hue University of Sciences with hands-on experience in mobile and backend
+            development. Built and deployed real-world applications, including a Flutter-based fitness app published on
+            the App Store. Interested in Flutter, backend systems, and AI-powered applications, with a strong focus on
+            building scalable and practical solutions.</p>
         </section>
 
         <!-- Skills -->
@@ -406,39 +429,76 @@
 
           <div class="skills-grid">
             <div class="skill-group">
-              <h3>Programming</h3>
+              <h3>AI-Assisted Development</h3>
+              <div class="tags">
+                <span class="tag">AI Agent tools for end-to-end development</span>
+                <span class="tag dim">Code generation and debugging</span>
+                <span class="tag">Rapid prototyping</span>
+                <span class="tag dim">System design and UI/UX support</span>
+                <span class="tag">AI-assisted architecture decisions</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Programming Languages</h3>
               <div class="tags">
                 <span class="tag">Java (OOP, file handling)</span>
-                <span class="tag dim">C/C++ (pointers, structs)</span>
-                <span class="tag">SQL (queries, joins)</span>
-                <span class="tag dim">JavaScript</span>
+                <span class="tag">Python (backend, API design)</span>
+                <span class="tag dim">C/C++ (OOP, structs, pointers)</span>
+                <span class="tag">SQL (Microsoft SQL Server)</span>
               </div>
             </div>
 
             <div class="skill-group">
               <h3>Mobile Development</h3>
               <div class="tags">
-                <span class="tag">Flutter (state management)</span>
-                <span class="tag">API integration</span>
-                <span class="tag dim">UI/UX implementation</span>
+                <span class="tag">Flutter (cross-platform, App Store deployment)</span>
+                <span class="tag">State management and API integration</span>
+                <span class="tag dim">UI design implementation</span>
               </div>
             </div>
 
             <div class="skill-group">
               <h3>Web Development</h3>
               <div class="tags">
-                <span class="tag">React (Vite)</span>
-                <span class="tag">Tailwind CSS</span>
-                <span class="tag">Firebase</span>
+                <span class="tag">JavaScript, HTML, CSS</span>
+                <span class="tag">React + Vite</span>
               </div>
             </div>
 
             <div class="skill-group">
-              <h3>Tools & Workflow</h3>
+              <h3>Backend & APIs</h3>
               <div class="tags">
-                <span class="tag">Git</span>
-                <span class="tag dim">Agile / Scrum</span>
-                <span class="tag dim">Microsoft Office 365</span>
+                <span class="tag">RESTful API design</span>
+                <span class="tag">Python backend systems</span>
+                <span class="tag dim">Firebase Auth, Firestore</span>
+                <span class="tag dim">Realtime Database, Cloud Functions</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>DevOps & Deployment</h3>
+              <div class="tags">
+                <span class="tag">Docker containerization</span>
+                <span class="tag">VPS deployment</span>
+                <span class="tag dim">Server configuration</span>
+                <span class="tag dim">Scalable deployment basics</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Other Technologies</h3>
+              <div class="tags">
+                <span class="tag">IoT with The Things Network (TTN)</span>
+                <span class="tag">Real-time data dashboards</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3>Tools</h3>
+              <div class="tags">
+                <span class="tag">Git / GitHub</span>
+                <span class="tag dim">Microsoft Office</span>
               </div>
             </div>
           </div>
@@ -457,48 +517,84 @@
           <div class="xp">
             <article class="xp-item">
               <div class="xp-head">
-                <h3 class="xp-title">HueTronics</h3>
-                <div class="xp-meta">Web Developer Intern · Mar 2025 — Aug 2025</div>
+                <h3 class="xp-title">Geneat Software</h3>
+                <div class="xp-meta">Mobile App Intern · 09/11/2023 — 10/02/2024</div>
               </div>
-              <div class="xp-role">React · Firebase · IoT</div>
+              <div class="xp-role">Flutter</div>
               <ul>
-                <li>Built a real-time IoT monitoring system with React + Firebase; visualized sensor streams
-                  (temperature, humidity, pH)
-                  from The Things Network.</li>
-                <li>Implemented device management (add / edit / delete / configure) and health status for 10+ test
-                  devices.</li>
-                <li>Hardened access with Firebase Auth and Firestore Rules; separated user/device permissions.</li>
-                <li>Worked with backend & hardware teams to integrate cloud–IoT pipelines; reduced end-to-end latency
-                  ~15% (testing).</li>
+                <li>Contributed to the development of a Flutter-based mobile application for NMD Group.</li>
+                <li>Identified and fixed bugs, improving application stability and performance.</li>
+                <li>Optimized JSON data handling for efficient client-server communication.</li>
+                <li>Developed and integrated APIs with backend services.</li>
+                <li>Performed testing and quality assurance to ensure application reliability.</li>
+                <li>Integrated AI Agent tools into workflow for code generation, debugging, and rapid prototyping.</li>
+                <li>Applied AI-assisted development to optimize features and reduce development time.</li>
               </ul>
             </article>
 
             <article class="xp-item">
               <div class="xp-head">
                 <h3 class="xp-title">Ari</h3>
-                <div class="xp-meta">Web Developer Trainee · Feb 2024 — Mar 2024</div>
+                <div class="xp-meta">Web Developer Trainee · 10/02/2024 — 07/03/2024</div>
               </div>
-              <div class="xp-role">React · Tailwind CSS</div>
+              <div class="xp-role">Tailwind CSS · React (Vite)</div>
               <ul>
-                <li>Trained with React (Vite) + Tailwind for rapid prototyping; shipped <strong>5+</strong> responsive
-                  demo sites.</li>
-                <li>Collaborated with designers to translate Figma to pixel-accurate components, trimming rework ~30%.
-                </li>
+                <li>Received training in Tailwind CSS and Vite React.</li>
+                <li>Developed multiple demo websites utilizing these technologies.</li>
+                <li>Gained hands-on experience working closely with a design team to bring creative concepts to life.</li>
               </ul>
+              <p style="margin:10px 0 0;color:var(--text-dim);">Reference: Project Manager - Mr. Duc -
+                <a href="https://www.facebook.com/langphongmtb" target="_blank" rel="noopener"
+                  style="color:var(--text);">facebook.com/langphongmtb</a>
+              </p>
             </article>
 
             <article class="xp-item">
               <div class="xp-head">
-                <h3 class="xp-title">Geneat Software</h3>
-                <div class="xp-meta">Mobile App Developer (Flutter) · Nov 2023 — Feb 2024</div>
+                <h3 class="xp-title">HueTronics</h3>
+                <div class="xp-meta">Web Developer Intern · 17/03/2025 — 01/08/2025</div>
               </div>
-              <div class="xp-role">Flutter</div>
+              <div class="xp-role">React · Firebase · IoT</div>
               <ul>
-                <li>Developed and deployed a Flutter app for the NMD Group.</li>
-                <li>Optimized JSON handling and API usage → improved data transfer speed ~20% (internal test).</li>
-                <li>Resolved <strong>15+</strong> issues and executed QA test cases to raise stability before release.
+                <li>Developed a web-based IoT monitoring system using React and Firebase.</li>
+                <li>Built real-time dashboards to visualize sensor data (temperature, humidity, pH) via TTN.</li>
+                <li>Implemented device management features (CRUD, configuration).</li>
+                <li>Designed access control and device sharing using Firebase Auth and Firestore security rules.</li>
+                <li>Created reusable components and services for TTN and Firebase integration.</li>
+              </ul>
+              <p style="margin:10px 0 0;color:var(--text-dim);">Reference: Project Manager - Mr. Phong - 098****820
+              </p>
+            </article>
+
+            <article class="xp-item">
+              <div class="xp-head">
+                <h3 class="xp-title">FAA-Hue</h3>
+                <div class="xp-meta">Team Lead · 01/08/2025 — Present</div>
+              </div>
+              <div class="xp-role">Flutter · Firebase · AI</div>
+              <ul>
+                <li><strong>FitBeast</strong> -
+                  <a href="https://apps.apple.com/us/app/ai-home-workout-gym-fitbeast/id6758308063?l=vi"
+                    target="_blank" rel="noopener" style="color:var(--text);">App Store link</a>
+                </li>
+                <li>Led a 3-member team to develop and deploy a cross-platform gym mobile app using Flutter.</li>
+                <li>Designed and implemented workout tracking, video guidance, and Firebase backend integration.</li>
+                <li>Built an AI-powered fitness assistant for personalized recommendations.</li>
+                <li>Managed task allocation, code reviews, and project architecture.</li>
+                <li>Integrated Firebase services (Authentication, Firestore, Cloud Functions) for scalability.</li>
+                <li>Successfully published on App Store with 1,000+ downloads.</li>
+                <li><strong>Pyroid:</strong> Built a Flutter-based mobile IDE for writing and executing Python code.</li>
+                <li>Designed remote code execution where Python code is sent to backend server for execution.</li>
+                <li>Used Docker to sandbox execution environments and deployed backend on VPS.</li>
+                <li>Implemented API-based communication between mobile client and backend.</li>
+                <li><strong>ShadowBan:</strong> Developed a content analysis tool for moderation risk evaluation.</li>
+                <li>Applied text processing to detect sensitive or policy-related content and provide real-time feedback.
                 </li>
               </ul>
+              <p style="margin:10px 0 0;color:var(--text-dim);">Reference: HR - Mrs Tam -
+                <a href="https://www.facebook.com/tam.lethithanh.96930" target="_blank" rel="noopener"
+                  style="color:var(--text);">facebook.com/tam.lethithanh.96930</a>
+              </p>
             </article>
           </div>
         </section>
@@ -509,18 +605,19 @@
             <h2>Education</h2>
           </div>
           <div class="rule"></div>
-          <h3>Hue University of Science — B.Sc. in Computer Science</h3>
-          <div class="meta">Sep 2022 — Sep 2026 · Huế, Việt Nam · Final-year student</div>
+          <h3>University of Science / Bachelor of Science</h3>
+          <div class="meta">Sep 2022 — Sep 2026 · 77 Nguyen Hue, Thua Thien Hue</div>
           <p style="margin-top:8px;color:var(--text-dim);">
-            Relevant Coursework: Data Structures & Algorithms, Database Systems, Operating Systems, Software
-            Engineering.
-            Competitive programming (ICPC HUSC).
+            Currently a final-year student with a strong passion for software development. Actively participated in
+            competitive programming (ICPC HUSC) and various technical workshops. Engaged in social and team activities
+            to strengthen collaboration and leadership skills. Relevant coursework: Software Engineering, Database
+            Systems, Mobile App Development.
           </p>
         </section>
       </section>
     </section>
 
-    <div class="footnote">Reference available upon request</div>
+    <div class="footnote">Tôn Thất Nam Giao - IT Developer</div>
   </main>
 
   <!-- ===== Tiny JS Background (subtle particle field) ===== -->
